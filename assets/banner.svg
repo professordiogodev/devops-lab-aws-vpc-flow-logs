@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="346" viewBox="0 0 1000 346" role="img" aria-label="VPC Flow Logs: The Call That Never Arrives">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0c4a6e"/><stop offset="1" stop-color="#0e7490"/></linearGradient><radialGradient id="glow" cx=".85" cy=".5" r=".6"><stop offset="0" stop-color="#fef08a" stop-opacity=".28"/><stop offset="1" stop-color="#fef08a" stop-opacity="0"/></radialGradient></defs>
+<rect width="1000" height="346" rx="18" fill="url(#bg)"/><rect width="1000" height="346" rx="18" fill="url(#glow)"/>
+<circle cx="60" cy="40" r="3" fill="#fef08a" opacity=".7"><animate attributeName="opacity" values=".2;.9;.2" dur="3s" repeatCount="indefinite"/></circle>
+<text x="48" y="64" font-size="14" letter-spacing="3" fill="#fef08a" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-weight="700">DEVOPS BOOTCAMP · LAB</text>
+<text x="48" y="112" font-size="40" font-weight="800" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif">VPC Flow Logs: The Call</text>
+<text x="48" y="160" font-size="40" font-weight="800" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif">That Never Arrives</text>
+<text x="48" y="190" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">A client server calls a service every 15 seconds and every call fails.</text>
+<text x="48" y="212" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">Nobody can see packets in the cloud, so you turn on VPC Flow Logs,</text>
+<text x="48" y="234" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">send them to CloudWatch, ask Logs Insights what the network rejected,</text>
+<text x="48" y="256" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">fix the one wrong firewall rule and watch the rejects turn into…</text>
+<rect x="48" y="288" width="105" height="32" rx="16" fill="#ffffff" fill-opacity=".14" stroke="#fef08a" stroke-opacity=".7"/><text x="62" y="309" font-size="14" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif">60-75 min</text>
+<rect x="165" y="288" width="449" height="32" rx="16" fill="#ffffff" fill-opacity=".14" stroke="#fef08a" stroke-opacity=".7"/><text x="179" y="309" font-size="14" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif">Cost: a few cents (two small servers for an hour)</text>
+<g transform="translate(750,73)">
+<g><path d="M60 130 a34 34 0 0 1 8 -66 a46 46 0 0 1 88 8 a30 30 0 0 1 -6 58 Z" fill="#e0f2fe"/><animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="4s" repeatCount="indefinite"/></g>
+<path d="M70 190 v-40 m-10 12 l10 -14 l10 14" fill="none" stroke="#fef08a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="-1.0s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0,16;0,-12" dur="2.4s" begin="-1.0s" repeatCount="indefinite"/></path>
+<path d="M110 190 v-40 m-10 12 l10 -14 l10 14" fill="none" stroke="#fef08a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="-0.4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0,16;0,-12" dur="2.4s" begin="-0.4s" repeatCount="indefinite"/></path>
+<path d="M150 190 v-40 m-10 12 l10 -14 l10 14" fill="none" stroke="#fef08a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="0.2s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0,16;0,-12" dur="2.4s" begin="0.2s" repeatCount="indefinite"/></path>
+</g>
+</svg>
