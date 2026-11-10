@@ -89,7 +89,7 @@ fields = [f.strip("${}") for f in fmt.split()] if fmt else []
 def events(pattern, window_min=60):
     out = []
     try:
-        r = aws("logs", "filter-log-events", "--log-group-name", lg, "--filter-pattern", pattern, "--start-time", str(int((time.time() - window_min * 60) * 1000)), "--limit", "200")
+        r = aws("logs", "filter-log-events", "--log-group-name", lg, "--filter-pattern", pattern, "--start-time", str(int((time.time() - window_min * 60) * 1000)))
         out = [e["message"].split() for e in (r or {}).get("events", [])]
     except Exception:
         pass
