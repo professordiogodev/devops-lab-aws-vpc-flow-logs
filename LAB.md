@@ -2,9 +2,15 @@
 
 ## The situation
 
-Two servers in the same network. One of them, the **client**, calls the other, the **service**, every 15 seconds. Every call fails. The service is running (you can see it in the EC2 console), the client is running, they are in the same subnet, and nothing in the application logs says anything useful: the call just waits and times out.
+**Case file 0412 - "The call that never arrives"**
 
-A timeout means that somewhere a packet vanished, and in the cloud you cannot run `tcpdump` on the network between two servers. What you *can* do is ask AWS to write down **every connection the network accepted or rejected**. That is what **VPC Flow Logs** do. You will turn them on, ask CloudWatch Logs Insights a question, find the exact rejected connection and fix the one wrong rule.
+*Exhibit A.* Two servers in the same subnet. The client calls the service every 15 seconds. Every call fails.
+
+*Exhibit B.* The EC2 console shows both running. Nothing in the application logs says anything useful: the call just waits and times out.
+
+*Exhibit C.* A timeout means a packet vanished somewhere, and in the cloud you cannot run `tcpdump` on the network between two servers.
+
+What you *can* do is ask AWS to write down **every connection the network accepted or rejected**. That is **VPC Flow Logs**. You turn them on, question CloudWatch Logs Insights, identify the exact rejected connection and fix the one wrong rule.
 
 > **Your mission**
 > - Build the broken scene and confirm the client reports `call=fail`
